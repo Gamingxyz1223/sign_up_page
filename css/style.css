@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: darkgray;
+}
+
+.content {
+    width: 350px;
+    background: darkblue;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #333;
+}
+
+form {
+    padding: 15px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin: 0 0 20px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    padding: 0 3px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group label.focus {
+    background: darkblue;
+    top: 0;
+    font-size: 12px;
+    color: lightgreen;
+}
+
+.input-group input.focus {
+    border: 1px solid lightgreen;
+}
+
+.input-group .hide {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+.input-group .show {
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    display: none;
+}
+
+.checkbox {
+    display: flex;
+    margin: 0 0 20px;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    background: darkgreen;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: lime;
+    -webkit-tap-highlight-color: transparent;
+}
